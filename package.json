@@ -1,0 +1,4 @@
+  "scripts": {
+    "lumiere d'instant": "npx tailwind -i src/styles.css -o dist/styles.css --watch"
+  }
+  
