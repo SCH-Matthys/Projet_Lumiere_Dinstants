@@ -2,7 +2,7 @@
 @use "./../../abstract/mixins" as mix;
 @use "../../base/typography";
 
-#s-testimony{
+#test-carrousel{
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -13,12 +13,12 @@
         text-align: center;
         padding-bottom: 64px;
     }
-    >div{
+    >div:nth-of-type(1){
         display: flex;
         width: 400%;
         position: relative;
+        transition: 1s;
         left: 0%;
-        @include mix.key_frames(carrousel, 20s, infinite);
         article{
             background-color: var.$color-pink;
             position: relative;
@@ -58,6 +58,22 @@
                         color: var.$color-gold;
                     }
                 }
+            }
+        }
+    }
+    >div:nth-of-type(2){
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 32px;
+        >div{
+            width: 25px;
+            height: 25px;
+            border-radius: 25px;
+            background-color: grey;
+            cursor: pointer;
+            &:hover{
+                background-color: black;
             }
         }
     }
