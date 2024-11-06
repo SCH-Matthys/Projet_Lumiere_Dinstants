@@ -34,64 +34,121 @@ main {
   background: linear-gradient(20deg, rgb(196, 231, 212) 5%, rgb(250, 218, 221) 95%);
 }
 
+header {
+  background-color: #2d2a32;
+  position: fixed;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 16px;
+}
+header nav img {
+  height: 100px;
+}
+header nav ul {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  padding: 0px 32px;
+}
+header nav ul li a {
+  color: #fadadd;
+  font-size: 24px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+header nav ul li a:hover {
+  color: #c4e7d4;
+}
+
 #s-testimony {
   display: flex;
   flex-direction: column;
-  padding: 32px;
+  overflow: hidden;
 }
 #s-testimony h2 {
   font-family: Tangerine;
   font-size: 72px;
   color: #2d2a32;
   text-align: center;
-  padding-bottom: 128px;
+  padding-bottom: 64px;
 }
-#s-testimony article {
+#s-testimony > div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin: 32px;
-  margin-bottom: 125px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  background-color: #fadadd;
-  border-radius: 16px;
+  width: 400%;
   position: relative;
-  box-shadow: 0px 4px 8px 0px grey;
+  left: 0%;
+  animation-name: carrousel;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
-#s-testimony article img {
+@keyframes carrousel {
+  0% {
+    left: 0%;
+  }
+  33% {
+    left: 0%;
+  }
+  38% {
+    left: -100%;
+  }
+  66% {
+    left: -100%;
+  }
+  71% {
+    left: -200%;
+  }
+  95% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+#s-testimony > div article {
+  background-color: #fadadd;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0px 4px 8px 0px grey;
+  width: 100%;
+  margin: 100px 32px 64px;
+}
+#s-testimony > div article img {
   width: 150px;
   border-radius: 75px;
-  border: solid 2px #fadadd;
-  box-shadow: 0px 0px 16px 8px grey;
+  border: solid 4px #fadadd;
   position: absolute;
   top: -75px;
   left: 50%;
   transform: translateX(-50%);
 }
-#s-testimony article > div {
+#s-testimony > div article > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 75px;
 }
-#s-testimony article > div h3 {
+#s-testimony > div article > div h3 {
   padding: 16px;
   font-family: Tangerine;
   font-size: 48px;
   color: #2d2a32;
 }
-#s-testimony article > div p {
+#s-testimony > div article > div p {
   text-align: center;
   padding: 0px 100px 16px;
 }
-#s-testimony article > div ul {
+#s-testimony > div article > div ul {
   display: flex;
 }
-#s-testimony article > div ul li {
+#s-testimony > div article > div ul li {
   padding: 0px 4px 24px;
   color: gold;
 }

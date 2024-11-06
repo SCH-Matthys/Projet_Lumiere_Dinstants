@@ -1,0 +1,33 @@
+@use "./../abstract/variables" as var;
+
+header{
+    background-color: var.$color-black;
+    position: fixed;
+    width: 100%;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 16px;
+        img{
+            height: 100px;
+        }
+        ul{
+            display: flex;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            li{
+                padding: 0px 32px;
+                a{
+                    color: var.$color-pink;
+                    font-size: 24px;
+                    transition: 0.2s;
+                    cursor: pointer;
+                    &:hover{
+                        color: var.$color-green;
+                    }
+                }
+            }
+        }
+    }
+}
