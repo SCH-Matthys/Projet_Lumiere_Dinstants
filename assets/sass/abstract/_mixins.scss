@@ -1,0 +1,37 @@
+@mixin btn{
+    transition: 0.2s;
+    padding: 6px 20px;
+    border: solid 1px white;
+    border-radius: 6px;
+    color: white;
+};
+
+@mixin key_frames($name, $duration, $count, $timing: ease-in-out){
+    @keyframes carrousel {
+        0%{
+            left: 0%;
+        }
+        33%{
+            left: 0%;
+        }
+        38%{
+            left: -100%;
+        }
+        66%{
+            left: -100%;
+        }
+        71%{
+            left: -200%;
+        }
+        95%{
+            left: -200%;
+        }
+        100%{
+            left: -300%;
+        }
+    };
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $count;
+    animation-timing-function: $timing;
+};

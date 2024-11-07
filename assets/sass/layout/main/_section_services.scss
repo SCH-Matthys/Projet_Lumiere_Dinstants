@@ -1,0 +1,130 @@
+@use "../../abstract/variables" as v;
+@use "../../base/typography";
+//  SECTION 1 - SERVICES
+.container_services{
+      font-family: poppins;
+      font-size: 0.8em;
+      box-sizing: border-box;
+}
+// TITRE***********************************
+.title {
+      h2{
+            background-color: v.$color-green;
+            border-radius:10px 10px 0 0;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            width: 200px;
+            font-family: Tangerine;
+            font-size: 48px;
+            box-shadow: 4px 0px 20px grey;
+            margin-left: 22em;
+            text-align: end;
+            padding-right: 1rem;
+           
+      }
+      .ligne{
+            border-top: 2rem;
+            background-color: v.$color-green;
+            height: 5px;
+            width: 55rem;
+            box-shadow: 4px 0 10px grey;
+            margin: auto;
+            margin-bottom: 2rem;
+      }
+}
+.container_cards{
+      display: flex;
+
+}
+// CONTAINER EVENEMENTS*****************************************
+.container_event{
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+  
+}
+// Ellipse avec photo*************************************
+.ellipse_pink{
+      background-color: v.$color-pink;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      box-shadow: 4px 0 20px grey;
+      margin-left: 20px;
+      z-index: 0;
+      .img1{
+            background-position: center;
+            background-size: cover;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;  
+            box-shadow: 4px 0 20px grey;
+            transform: translate(12.5% ,12%);
+            z-index: 3;
+
+      }
+      .img2{
+            background-position: center;
+            background-size: cover;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;  
+            box-shadow: 4px 0 20px grey;
+            transform: translate(12.5% ,12%);
+            z-index: 3;
+      }
+      .img3{
+            background-position: center;
+            background-size: cover;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;  
+            box-shadow: 4px 0 20px grey;
+            transform: translate(12.5% ,12%);
+      }
+}
+// Text de l'évement******************************************
+.content_event{
+      background-color: v.$color-green;
+      opacity: 80%;
+      width: 60%;
+      height: 100%;
+      box-shadow: 4px 4px 20px grey;
+      padding: 1.5rem;
+      transform: translate(-20%,20%);
+      border-radius: 10px;
+      z-index: 2;
+      
+      h2{
+            font-family: Tangerine;
+            font-size: 48px;
+            margin-bottom: 1rem;
+            text-align: center;
+      }
+}
+.content_event:hover{
+      background-color: v.$color-green;
+      opacity: 80%;
+      width: 60%;
+      height: 100%;
+      box-shadow: 4px 4px 20px grey;
+      padding: 1rem;
+      transform: translate(-20%,20%);
+      border-radius: 10px;
+      z-index: 2;
+      h2{
+            font-family: Tangerine;
+            font-size: 48px;
+            background-color: v.$color-green;
+            text-align: end;
+      }
+}
+
+.title_event{
+      background-color: white;
+      border-radius: 20px;
+      font-family: Tangerine;
+      font-size: 48px;
+      padding: 0.2rem 1rem;
+}
+
