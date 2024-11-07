@@ -1,12 +1,13 @@
-let contentEvent=document.querySelector(".content_event");
-let titleEvent=document.querySelector(".title_event");
-let textEvent=document.querySelector(".text_event");
-let mariages="Mariages"
+let contentEventMar=document.querySelector(".content_event");
+let titleEventMar=document.querySelector(".title_event");
+let textEventMar=document.querySelector(".text_event");
+let items=[]
 
-textEvent.addEventListener("mouseover",()=>{
-      mariages.style.display ="block";
+
+titleEventMar.addEventListener("mouseover",()=>{
+      contentEventMar.style.visibility ="visible";
 })
-textEvent.addEventListener("mouseout", () => {
-      contentEvent.style.visibility = "hidden";
-      textEvent.style.display="block";
+contentEventMar.addEventListener("mouseout", () => {
+      contentEventMar.style.visibility = "hidden";
+      titleEventMar.style.visibility="visible";
 });
