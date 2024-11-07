@@ -279,10 +279,35 @@ footer > div:nth-of-type(3) ul li a:hover {
   color: #c4e7d4;
 }
 
+@media screen and (max-width: 1200px) {
+  .container_cards {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container_event {
+    display: none;
+    margin: auto;
+  }
+  .title h2 {
+    background-color: aquamarine;
+  }
+  .greeting_container {
+    display: none;
+  }
+  .pict {
+    position: static;
+    background-size: auto;
+  }
+  .pict_1 {
+    margin: auto;
+    opacity: 1;
+  }
+}
 .container_services {
   font-family: poppins;
   font-size: 0.8em;
   box-sizing: border-box;
+  height: 100%;
 }
 
 .title h2 {
@@ -294,18 +319,19 @@ footer > div:nth-of-type(3) ul li a:hover {
   font-family: Tangerine;
   font-size: 48px;
   box-shadow: 4px 0px 20px grey;
-  margin-left: 22em;
   text-align: end;
   padding-right: 1rem;
+  margin-left: 70%;
 }
 .title .ligne {
   border-top: 2rem;
   background-color: #c4e7d4;
   height: 5px;
-  width: 55rem;
+  width: 80%;
   box-shadow: 4px 0 10px grey;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
   margin: auto;
-  margin-bottom: 2rem;
 }
 
 .container_cards {
@@ -314,8 +340,11 @@ footer > div:nth-of-type(3) ul li a:hover {
 
 .container_event {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  margin-top: 5rem;
 }
 
 .ellipse_pink {
@@ -326,35 +355,32 @@ footer > div:nth-of-type(3) ul li a:hover {
   box-shadow: 4px 0 20px grey;
   margin-left: 20px;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ellipse_pink .img1 {
-  background-position: center;
-  background-size: cover;
   width: 120px;
   height: 120px;
   border-radius: 50%;
   box-shadow: 4px 0 20px grey;
-  transform: translate(12.5%, 12%);
   z-index: 3;
+  object-fit: cover;
 }
 .ellipse_pink .img2 {
-  background-position: center;
-  background-size: cover;
   width: 120px;
   height: 120px;
   border-radius: 50%;
   box-shadow: 4px 0 20px grey;
-  transform: translate(12.5%, 12%);
   z-index: 3;
+  object-fit: cover;
 }
 .ellipse_pink .img3 {
-  background-position: center;
-  background-size: cover;
   width: 120px;
   height: 120px;
   border-radius: 50%;
   box-shadow: 4px 0 20px grey;
-  transform: translate(12.5%, 12%);
+  object-fit: cover;
 }
 
 .content_event {
@@ -367,6 +393,7 @@ footer > div:nth-of-type(3) ul li a:hover {
   transform: translate(-20%, 20%);
   border-radius: 10px;
   z-index: 2;
+  margin-bottom: 8rem;
 }
 .content_event h2 {
   font-family: Tangerine;
@@ -410,7 +437,7 @@ footer > div:nth-of-type(3) ul li a:hover {
   font-family: Tangerine;
   font-size: 48px;
   box-shadow: 4px 0px 20px grey;
-  margin-left: 22em;
+  margin-left: 70%;
   text-align: end;
   padding-right: 1rem;
 }
@@ -418,7 +445,7 @@ footer > div:nth-of-type(3) ul li a:hover {
   border-top: 2rem;
   background-color: #fadadd;
   height: 5px;
-  width: 55rem;
+  width: 80%;
   box-shadow: 4px 0 10px grey;
   margin: auto;
   margin-bottom: 2rem;
@@ -437,6 +464,14 @@ footer > div:nth-of-type(3) ul li a:hover {
   align-items: center;
   cursor: pointer;
   font-size: 60px;
+}
+
+.fa-angles-right {
+  color: white;
+}
+
+.fa-angles-left {
+  color: white;
 }
 
 .greeting_gallery {

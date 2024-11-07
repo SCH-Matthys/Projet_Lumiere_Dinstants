@@ -14,7 +14,7 @@
                   font-family: Tangerine;
                   font-size: 48px;
                   box-shadow: 4px 0px 20px grey;
-                  margin-left: 22em;
+                  margin-left: 70%;
                   text-align: end;
                   padding-right: 1rem;
                  
@@ -23,7 +23,7 @@
                   border-top: 2rem;
                   background-color: v.$color-pink;
                   height: 5px;
-                  width: 55rem;
+                  width: 80%;
                   box-shadow: 4px 0 10px grey;
                   margin: auto;
                   margin-bottom: 2rem;
@@ -42,8 +42,14 @@
       align-items: center;
       cursor: pointer;
       font-size: 60px;
+   
 }
-
+.fa-angles-right{
+      color: white;
+}
+.fa-angles-left{
+      color: white;
+}
 .greeting_gallery{
       width: 100%;
 }

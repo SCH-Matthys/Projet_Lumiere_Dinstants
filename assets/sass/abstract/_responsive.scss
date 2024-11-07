@@ -1,3 +1,26 @@
-@media screen and (max-width:(1800px)){
-    
+@media screen and (max-width:(1200px)){
+      .container_cards{
+            flex-direction: column;
+            justify-content: center;
+      }
+      .container_event{
+           display: none;
+           margin: auto;
+      }
+      .title h2{
+                  background-color: aquamarine;
+      }
+
+      .greeting_container{
+            display: none;
+      }
+      .pict{
+            position: static;
+            background-size: auto;
+      }
+      .pict_1{
+            margin: auto;
+            opacity:1;
+      }
+     
 }

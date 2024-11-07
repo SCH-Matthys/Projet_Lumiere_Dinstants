@@ -1,10 +1,13 @@
 @use "../../abstract/variables" as v;
 @use "../../base/typography";
+@use "../../abstract/responsive";
+
 //  SECTION 1 - SERVICES
 .container_services{
       font-family: poppins;
       font-size: 0.8em;
       box-sizing: border-box;
+      height: 100%;
 }
 // TITRE***********************************
 .title {
@@ -17,19 +20,20 @@
             font-family: Tangerine;
             font-size: 48px;
             box-shadow: 4px 0px 20px grey;
-            margin-left: 22em;
             text-align: end;
             padding-right: 1rem;
+            margin-left: 70%;
            
       }
       .ligne{
             border-top: 2rem;
             background-color: v.$color-green;
             height: 5px;
-            width: 55rem;
+            width: 80%;
             box-shadow: 4px 0 10px grey;
+            margin-bottom: 5rem;
+            margin-top: 5rem;
             margin: auto;
-            margin-bottom: 2rem;
       }
 }
 .container_cards{
@@ -38,8 +42,12 @@
 // CONTAINER EVENEMENTS*****************************************
 .container_event{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: flex-start;
+      width: 50%;
+      height: 100%;
+      margin-top: 5rem;
+
   
 }
 // Ellipse avec photo*************************************
@@ -51,35 +59,32 @@
       box-shadow: 4px 0 20px grey;
       margin-left: 20px;
       z-index: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .img1{
-            background-position: center;
-            background-size: cover;
             width: 120px;
             height: 120px;
             border-radius: 50%;  
             box-shadow: 4px 0 20px grey;
-            transform: translate(12.5% ,12%);
             z-index: 3;
+            object-fit: cover;
 
       }
       .img2{
-            background-position: center;
-            background-size: cover;
             width: 120px;
             height: 120px;
             border-radius: 50%;  
             box-shadow: 4px 0 20px grey;
-            transform: translate(12.5% ,12%);
             z-index: 3;
+            object-fit: cover;
       }
       .img3{
-            background-position: center;
-            background-size: cover;
             width: 120px;
             height: 120px;
             border-radius: 50%;  
             box-shadow: 4px 0 20px grey;
-            transform: translate(12.5% ,12%);
+            object-fit: cover;
       }
 }
 // Text de l'évement******************************************
@@ -93,6 +98,7 @@
       transform: translate(-20%,20%);
       border-radius: 10px;
       z-index: 2;
+      margin-bottom: 8rem;
       
       h2{
             font-family: Tangerine;

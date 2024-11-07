@@ -50,19 +50,36 @@ contentEventMar.addEventListener("mouseout", () => {
       contentEventMar.style.visibility = "hidden";
       titleEventMar.style.visibility="visible";
     })
+
 // FIN SECTION 1--------------------------
 
 // DEBUT SECTION 2----------------------------
 const greetingContainer=document.querySelector(".greeting_container");
 const galleryControlContainer=document.querySelector(".gallery_control");
-const galleryPicts=document.querySelectorAll(".pict");
 const rightbtn=document.querySelector("#rightbtn");
+const leftbtn=document.querySelector("#leftbtn");
+const pict1=document.querySelector(".pict_1");
 const pict2=document.querySelector(".pict_2");
+const pict3=document.querySelector(".pict_3");
+const images =[pict1,pict2,pict3];
+let index=0;
 
-pict2.document.addEventListener("click",function(){
-    // pict2.style.opacity="0.4";
-    console.log("coucou");
-})
+rightbtn.addEventListener("click",function(){
+    pict2.style.opacity="0.4";
+    pict2.style.width="330px";
+    pict2.style.height="200px";
+    pict2.style.left="85%";
+    pict2.style.boxShadow="none";
+    pict3.style.left="15%";
+    pict1.style.boxShadow=" 0 5px 33px 6px rgba(0,0,0,0.35)"; 
+    pict1.style.opacity="1";
+    pict1.style.width="430px";
+    pict1.style.height="300px";
+    pict1.style.left="50%";
+    pict1.style.transition="all 0.5s";
+    pict1.style.zIndex="2";
+
+});
 
 // FIN SECTION 2-----------------------------
 
