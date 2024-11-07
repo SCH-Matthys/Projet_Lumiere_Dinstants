@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Couleurs personnalisées */
-        .bg-custom-pink { background-color: #fadadd; }
+        .bg-gradient-custom {
+            background: linear-gradient(to bottom, #fadadd, #c4e7d4);
+        }
+        .text-custom-dark { color: #2d2a32; }
         .bg-custom-mint { background-color: #c4e7d4; }
         .bg-custom-dark { background-color: #2d2a32; }
-        .text-custom-dark { color: #2d2a32; }
     </style>
 </head>
-<body class="bg-custom-pink font-sans">
-    <!-- Header Navigation -->
-    <header class="bg-custom-dark text-white p-4">
+<body class="bg-gradient-custom font-sans">
+    <!-- Header Navigation (Fixed) -->
+    <header class="bg-custom-dark text-white p-4 shadow-lg fixed top-0 w-full z-10">
         <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo Image -->
+            <!-- Logo Image in Header -->
             <div>
                 <img src="img/1000012119-removebg-preview.png" alt="Lumière d'Instants Logo" class="h-12">
             </div>
@@ -32,22 +34,26 @@
         </div>
     </header>
 
+    <!-- Spacing for the fixed header -->
+    <div class="h-16"></div> <!-- Ajout d'un espace pour compenser la hauteur du header fixe -->
+
     <!-- Form Section -->
     <section class="flex flex-col items-center py-12">
+        <div class="bg-white w-full max-w-xl p-8 rounded-md shadow-lg">
             <h1 class="text-center text-4xl font-serif text-custom-dark mb-2">DEVIS</h1>
             <p class="text-center text-custom-dark mb-8">demander un devis en 5 minutes</p>
 
             <form class="space-y-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="nom" class="p-3 border border-gray-300 rounded w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
-                    <input type="text" placeholder="prenom" class="p-3 border border-gray-300 rounded w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
-                    <input type="email" placeholder="email" class="p-3 border border-gray-300 rounded w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
-                    <input type="tel" placeholder="numéro de téléphone" class="p-3 border border-gray-300 rounded w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
-                    <input type="date" placeholder="Date" class="p-3 border border-gray-300 rounded w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
-                    <input type="text" placeholder="budget" class="p-3 border border-gray-300 rounded w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
+                    <input type="text" placeholder="nom" class="p-3 border border-gray-300 rounded-md shadow-lg w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
+                    <input type="text" placeholder="prenom" class="p-3 border border-gray-300 rounded-md shadow-lg w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
+                    <input type="email" placeholder="email" class="p-3 border border-gray-300 rounded-md shadow-lg w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
+                    <input type="tel" placeholder="numéro de téléphone" class="p-3 border border-gray-300 rounded-md shadow-lg w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
+                    <input type="date" placeholder="Date" class="p-3 border border-gray-300 rounded-md shadow-lg w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
+                    <input type="text" placeholder="budget" class="p-3 border border-gray-300 rounded-md shadow-lg w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
                 </div>
 
-                <select class="p-3 border border-gray-300 rounded w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
+                <select class="p-3 border border-gray-300 rounded-md shadow-lg w-full bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500">
                     <option>type d'évènement</option>
                     <option>Mariage</option>
                     <option>Anniversaire</option>
@@ -55,9 +61,9 @@
                     <option>Autre</option>
                 </select>
 
-                <textarea placeholder="message" class="p-3 border border-gray-300 rounded w-full h-32 bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500"></textarea>
+                <textarea placeholder="message" class="p-3 border border-gray-300 rounded-md shadow-lg w-full h-32 bg-custom-mint text-custom-dark focus:outline-none focus:border-gray-500"></textarea>
 
-                <button type="submit" class="bg-custom-mint hover:bg-opacity-75 text-custom-dark py-2 px-4 rounded w-full">
+                <button type="submit" class="bg-custom-mint hover:bg-opacity-75 text-custom-dark py-2 px-4 rounded-md shadow-lg w-full">
                     envoyer
                 </button>
             </form>
@@ -65,7 +71,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-custom-dark text-white p-4 mt-12">
+    <footer class="bg-custom-dark text-white p-4 shadow-lg mt-12">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <!-- Contact Information -->
             <div class="text-center md:text-left">
@@ -74,9 +80,9 @@
                 <p>mail@adresse mail</p>
             </div>
 
-            <!-- Logo -->
+            <!-- Logo in Footer -->
             <div class="text-center">
-                <img src="img/1000012119-removebg-preview.png" alt="Lumière d'Instants Logo" class="h-12">
+                <img src="img/1000012119-removebg-preview.png" alt="Lumière d'Instants Logo" class="h-16 mx-auto">
             </div>
 
             <!-- Social Media Links -->
@@ -96,4 +102,3 @@
     </footer>
 </body>
 </html>
-
