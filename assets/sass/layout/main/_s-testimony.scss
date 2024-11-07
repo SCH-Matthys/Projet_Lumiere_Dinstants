@@ -1,0 +1,64 @@
+@use "./../../abstract/variables" as var;
+@use "./../../abstract/mixins" as mix;
+@use "../../base/typography";
+
+#s-testimony{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    h2{
+        font-family: Tangerine;
+        font-size: 72px;
+        color: var.$color-black;
+        text-align: center;
+        padding-bottom: 64px;
+    }
+    >div{
+        display: flex;
+        width: 400%;
+        position: relative;
+        left: 0%;
+        @include mix.key_frames(carrousel, 20s, infinite);
+        article{
+            background-color: var.$color-pink;
+            position: relative;
+            border-radius: 2px;
+            box-shadow: 0px 4px 8px 0px grey;
+            width: 80%;
+            margin: 100px 32px 64px;
+            img{
+                width: 150px;
+                border-radius: 75px;
+                border: solid 4px var.$color-pink;
+                position: absolute;
+                top: -75px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            >div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 75px;
+                h3{
+                    padding: 16px;
+                    font-family: Tangerine;
+                    font-size: 48px;
+                    color: var.$color-black;
+                }
+                p{
+                    text-align: center;
+                    padding: 0px 100px 16px;
+                }
+                ul{
+                    display: flex;
+                    li{
+                        padding: 0px 4px 24px; 
+                        color: var.$color-gold;
+                    }
+                }
+            }
+        }
+    }
+}
