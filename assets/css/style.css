@@ -41,6 +41,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   padding: 16px 16px;
+  height: 280px;
 }
 header nav img {
   height: 100px;
@@ -63,92 +64,22 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #c4e7d4;
 }
-
-#s-testimony {
-  display: flex;
+header nav #menuBurger {
+  width: 75px;
+  height: 90px;
+  border-radius: 4px;
+  border: solid 0.5px #fadadd;
+  display: none;
   flex-direction: column;
-  overflow: hidden;
+  justify-content: space-evenly;
 }
-#s-testimony h2 {
-  font-family: Tangerine;
-  font-size: 72px;
-  color: #2d2a32;
-  text-align: center;
-  padding-bottom: 64px;
-}
-#s-testimony > div {
-  display: flex;
-  width: 400%;
-  position: relative;
-  left: 0%;
-  animation-name: carrousel;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-@keyframes carrousel {
-  0% {
-    left: 0%;
-  }
-  33% {
-    left: 0%;
-  }
-  38% {
-    left: -100%;
-  }
-  66% {
-    left: -100%;
-  }
-  71% {
-    left: -200%;
-  }
-  95% {
-    left: -200%;
-  }
-  100% {
-    left: -300%;
-  }
-}
-#s-testimony > div article {
-  background-color: #fadadd;
-  position: relative;
-  border-radius: 2px;
-  box-shadow: 0px 4px 8px 0px grey;
-  width: 80%;
-  margin: 100px 32px 64px;
-}
-#s-testimony > div article img {
-  width: 150px;
-  border-radius: 75px;
-  border: solid 4px #fadadd;
-  position: absolute;
-  top: -75px;
-  left: 50%;
+header nav #menuBurger div {
+  margin-left: 50%;
   transform: translateX(-50%);
-}
-#s-testimony > div article > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 75px;
-}
-#s-testimony > div article > div h3 {
-  padding: 16px;
-  font-family: Tangerine;
-  font-size: 48px;
-  color: #2d2a32;
-}
-#s-testimony > div article > div p {
-  text-align: center;
-  padding: 0px 100px 16px;
-}
-#s-testimony > div article > div ul {
-  display: flex;
-}
-#s-testimony > div article > div ul li {
-  padding: 0px 4px 24px;
-  color: gold;
+  width: 65%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #fadadd;
 }
 
 #test-carrousel {
@@ -209,7 +140,7 @@ header nav ul li a:hover {
 }
 #test-carrousel > div:nth-of-type(1) article > div ul li {
   padding: 0px 4px 24px;
-  color: gold;
+  color: #eda323;
 }
 #test-carrousel > div:nth-of-type(2) {
   display: flex;
@@ -279,6 +210,67 @@ footer > div:nth-of-type(3) ul li a:hover {
   color: #c4e7d4;
 }
 
+@media screen and (max-width: 900px) {
+  header nav {
+    flex-direction: row-reverse;
+  }
+  header nav ul {
+    display: none;
+    margin-top: 16px;
+  }
+  header nav ul li {
+    padding: 4px 16px;
+    width: 100%;
+    display: block;
+    border-bottom: solid 2px #fadadd;
+  }
+  header nav #menuBurger {
+    margin-left: 16px;
+    display: flex;
+  }
+  footer {
+    padding: 50px 50px;
+  }
+  footer > div:nth-of-type(2) img {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #test-carrousel > div:nth-of-type(1) > article {
+    margin: 100px 0px 64px;
+  }
+  #test-carrousel > div:nth-of-type(1) > article > div p {
+    text-align: center;
+    padding: 0px 32px 16px;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer > div:nth-of-type(1) {
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    height: auto;
+    padding-bottom: 48px;
+  }
+  footer > div:nth-of-type(1) p {
+    text-align: center;
+  }
+  footer > div:nth-of-type(2) {
+    order: 1;
+    padding-bottom: 48px;
+  }
+  footer > div:nth-of-type(2) img {
+    height: 200px;
+  }
+  footer > div:nth-of-type(3) {
+    justify-content: center;
+    align-items: center;
+    order: 3;
+    height: auto;
+  }
+}
 .container_services {
   font-family: poppins;
   font-size: 0.8em;

@@ -36,18 +36,31 @@ buttons.forEach(button =>{
 });
 
 startCarrousel();
+
+const mBurger = document.getElementById("menuBurger");
+const ulMenuBurger = document.getElementById("ulMenuBurger");
+
+mBurger.addEventListener("click", () =>{
+    ulMenuBurger.style.paddingTop = "25px";
+    ulMenuBurger.style.display = "flex";
+    ulMenuBurger.style.alignItems = "start";
+    ulMenuBurger.style.flexDirection = "column";
+})
+
+
 let contentEventMar=document.querySelector(".content_event");
 let titleEventMar=document.querySelector(".title_event");
 let textEventMar=document.querySelector(".text_event");
 let items=[]
-
 
 titleEventMar.addEventListener("mouseover",()=>{
       contentEventMar.style.visibility ="visible";
 })
 contentEventMar.addEventListener("mouseout", () => {
       contentEventMar.style.visibility = "hidden";
-      titleEventMar.style.visibility="visible";
+      titleEventMar.style.visibility="visible";}
+);
+
 
 document.addEventListener("DOMContentLoaded", function () {
     // Sélectionne toutes les images dans les div `.relative`

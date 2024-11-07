@@ -9,6 +9,7 @@ header{
         display: flex;
         justify-content: space-between;
         padding: 16px 16px;
+        height: 280px;
         img{
             height: 100px;
         }
@@ -28,6 +29,23 @@ header{
                         color: var.$color-green;
                     }
                 }
+            }
+        }
+        #menuBurger{
+            width: 75px;
+            height: 90px;
+            border-radius: 4px;
+            border: solid 0.5px var.$color-pink;
+            display: none;
+            flex-direction: column;
+            justify-content: space-evenly;
+            div{
+                margin-left: 50%;
+                transform: translateX(-50%);
+                width: 65%;
+                height: 4px;
+                border-radius: 4px;
+                background-color: var.$color-pink;
             }
         }
     }
