@@ -10,18 +10,68 @@
 <body>
     <!-- POUR LANCER SASS : DANS LE TERMINAL -->
     <!-- assets/dart-sass/sass assets/sass/style.scss assets/css/style.css --watch -->
+    
+    <header>
+        <nav>
+            <img src="./assets/img/logo.png" alt="Logo de l'entreprise">
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="#s-testimony">Témoignages</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <header>
-            <nav>
-                <img src="./assets/img/logo.png" alt="Logo de l'entreprise">
-                <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="#s-testimony">Témoignages</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="container_services">
+            <div class="title">
+                <h2>Services</h2>
+                <div class="ligne"></div>
+            </div>
+            <div class="container_cards">
+                <div class="container_event">
+                    <div class="ellipse_pink">
+                        <img class="img1" src="assets/img/bride-7689627_1280.jpg" alt="mariée sur fond d'un paysage">   
+                    </div>
+    
+                    <div class="content_event">
+                        <h2 class="title_event">Mariages</h2>
+                        <p class="text_event"> Que vous rêviez d'une cérémonie intime ou d'une célébration somptueuse, nous orchestrons chaque détail, de la décoration à la coordination du jour J. Notre équipe s’engage à rendre votre mariage aussi unique que votre histoire d'amour.</p>
+                    </div>
+                </div>
+                <div class="container_event">
+                    <div class="ellipse_pink">
+                        <img class="img2" src="assets/img/architectural-3384683_1280.jpg" alt="mariée sur fond d'un paysage">
+                    </div>
+                    <div class="content_event">
+                        <h2 class="title_event">Conférences</h2>
+                        <p class="text_event">  Nous comprenons l'importance d'une conférence bien organisée pour transmettre des messages percutants. De la gestion des intervenants à la logistique sur place, notre agence assure une coordination sans faille pour que vos participants profitent pleinement de l'expérience</p>
+                    </div>
+                </div>
+                <div class="container_event">
+                    <div class="ellipse_pink">
+                        <img class="img3" src="assets/img/birthday-cake-6591720_1280.jpg" alt="mariée sur fond d'un paysage">
+                    </div>
+                    <div class="content_event">
+                        <h2 class="title_event">Anniversaires</h2>
+                        <p class="text_event"> Petits ou grands, chaque anniversaire est une occasion de célébrer la vie. Nous créons des ambiances festives, avec des thèmes personnalisés et des activités sur mesure, pour des moments inoubliables avec vos proches.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION 2 - GALLERY ACCUEIL /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="section2">
+            <div class="greeting_gallery">
+                <div class="greeting_container">
+                    <img src="assets/img/cake-2338813_1280.jpg" alt="Gateau d'anniversaire rose ornementé de pétales de roses en sucre" class="pict pict_1" data-index="1">
+                    <img src="assets/img/bride-7689627_1280.jpg" alt="Une mariée sur un fond de paysage" class="pict pict_2" data-index="2">
+                    <img src="assets/img/couple-1779066_1280.jpg" alt="Couple s'embrassant dans un chemin d'herbe" class="pict pict_3" data-index="3">
+                </div>
+                <div class="gallery_control"></div>
+            </div>
+        </div>
+        <!-- SECTION TEMOIGNAGES /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <section id="s-testimony">
             <h2>Vos témoignages</h2>
             <div>
@@ -150,6 +200,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div>
             <p>Nous contacter :</p>
@@ -169,6 +220,7 @@
             <p>Tout droits réservés.</p>
         </div>
     </footer>
+
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
