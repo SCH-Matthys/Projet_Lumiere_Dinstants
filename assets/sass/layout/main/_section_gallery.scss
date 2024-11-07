@@ -4,12 +4,46 @@
 //  SECTION 2 - ACCUEIL GALLERY
 
 .section2{
+      .title {
+            h2{
+                  background-color: v.$color-pink;
+                  border-radius:10px 10px 0 0;
+                  padding-top: 0.2rem;
+                  padding-bottom: 0.2rem;
+                  width: 200px;
+                  font-family: Tangerine;
+                  font-size: 48px;
+                  box-shadow: 4px 0px 20px grey;
+                  margin-left: 22em;
+                  text-align: end;
+                  padding-right: 1rem;
+                 
+            }
+            .ligne{
+                  border-top: 2rem;
+                  background-color: v.$color-pink;
+                  height: 5px;
+                  width: 55rem;
+                  box-shadow: 4px 0 10px grey;
+                  margin: auto;
+                  margin-bottom: 2rem;
+            }
+      }
+}
+.greeting_container{
       width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;
-    
 }
+.btn{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      cursor: pointer;
+      font-size: 60px;
+}
+
 .greeting_gallery{
       width: 100%;
 }
@@ -38,8 +72,23 @@
 }
 
 .pict_2{
-      box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+      box-shadow: 0 5px 33px 6px rgba(0,0,0,0.35);
       height: 300px;
       opacity: 1;
-      left: 50;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 430px;
+      z-index: 2;
 }
+.pict_3{
+      left: 85%;
+      opacity: 0.4;
+      transform: translateX(-50%);
+}
+.gallery_control{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+}
+
+

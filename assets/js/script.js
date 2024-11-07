@@ -34,8 +34,9 @@ function pauseCarrousel(){
 buttons.forEach(button =>{
     button.addEventListener("click", pauseCarrousel);
 });
-
 startCarrousel();
+
+// section 1-service - cartes Evenement------------------------
 let contentEventMar=document.querySelector(".content_event");
 let titleEventMar=document.querySelector(".title_event");
 let textEventMar=document.querySelector(".text_event");
@@ -48,6 +49,22 @@ titleEventMar.addEventListener("mouseover",()=>{
 contentEventMar.addEventListener("mouseout", () => {
       contentEventMar.style.visibility = "hidden";
       titleEventMar.style.visibility="visible";
+    })
+// FIN SECTION 1--------------------------
+
+// DEBUT SECTION 2----------------------------
+const greetingContainer=document.querySelector(".greeting_container");
+const galleryControlContainer=document.querySelector(".gallery_control");
+const galleryPicts=document.querySelectorAll(".pict");
+const rightbtn=document.querySelector("#rightbtn");
+const pict2=document.querySelector(".pict_2");
+
+pict2.document.addEventListener("click",function(){
+    // pict2.style.opacity="0.4";
+    console.log("coucou");
+})
+
+// FIN SECTION 2-----------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
     // Sélectionne toutes les images dans les div `.relative`
