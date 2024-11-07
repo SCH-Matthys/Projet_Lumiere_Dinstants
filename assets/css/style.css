@@ -218,13 +218,13 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin-bottom: 32px;
+  margin-bottom: 75px;
 }
 #test-carrousel > div:nth-of-type(2) > div {
   width: 25px;
   height: 25px;
   border-radius: 25px;
-  background-color: grey;
+  background-color: #fadadd;
   cursor: pointer;
 }
 #test-carrousel > div:nth-of-type(2) > div:hover {

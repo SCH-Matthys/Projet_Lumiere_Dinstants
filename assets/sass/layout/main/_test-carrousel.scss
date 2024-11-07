@@ -65,12 +65,12 @@
         display: flex;
         justify-content: center;
         gap: 25px;
-        margin-bottom: 32px;
+        margin-bottom: 75px;
         >div{
             width: 25px;
             height: 25px;
             border-radius: 25px;
-            background-color: grey;
+            background-color: var.$color-pink;
             cursor: pointer;
             &:hover{
                 background-color: black;

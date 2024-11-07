@@ -17,17 +17,13 @@ btnCarrousel3.addEventListener("click", () =>{
 
 const buttons = [btnCarrousel1, btnCarrousel2, btnCarrousel3];
 let interval;
+let buttonIndex = 0;
 
 function startCarrousel(){
-    interval = setInterval(() => {
-        btnCarrousel2.click();
-    }, 5000)
-    interval = setInterval(() => {
-        btnCarrousel3.click();
-    }, 10000)
-    interval = setInterval(() => {
-        btnCarrousel1.click();
-    }, 15000)
+    interval = setInterval(() =>{
+        buttonIndex = ( buttonIndex +1 ) % buttons.length;
+        buttons[buttonIndex].click();
+    }, 1000);
 }
 
 function pauseCarrousel(){
@@ -39,4 +35,4 @@ buttons.forEach(button =>{
     button.addEventListener("click", pauseCarrousel);
 });
 
-pauseCarrousel();
+startCarrousel();
