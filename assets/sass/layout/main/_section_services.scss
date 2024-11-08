@@ -1,10 +1,40 @@
 @use "../../abstract/variables" as v;
 @use "../../base/typography";
+// bannier
+.banner{
+      background-image: url(../img/bride-7689627_1280.jpg);
+      background-size: cover;
+      background-position: center;
+      // height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // width: 100%;
+      padding: 9rem 0;
+      text-shadow: 1px 2px 5px v.$color-green;
+
+      p{
+            width: 40%;
+            padding-right: 2rem;
+            line-height: 2;
+      }
+}
+.slogan h1{
+      font-family: tangerine;
+      font-size: 7em;
+      width: 100%;
+      margin-left: 2rem;
+      
+}
+.banner_title_two{
+      padding-left: 6rem; 
+ }
 //  SECTION 1 - SERVICES
 .container_services{
       font-family: poppins;
       font-size: 0.8em;
       box-sizing: border-box;
+      height: 100%;
 }
 // TITRE***********************************
 .title {
@@ -17,30 +47,34 @@
             font-family: Tangerine;
             font-size: 48px;
             box-shadow: 4px 0px 20px grey;
-            margin-left: 22em;
             text-align: end;
             padding-right: 1rem;
+            margin-left: 70%;
            
       }
       .ligne{
             border-top: 2rem;
             background-color: v.$color-green;
             height: 5px;
-            width: 55rem;
+            width: 80%;
             box-shadow: 4px 0 10px grey;
+            margin-bottom: 5rem;
+            margin-top: 5rem;
             margin: auto;
-            margin-bottom: 2rem;
       }
 }
 .container_cards{
       display: flex;
-
 }
 // CONTAINER EVENEMENTS*****************************************
 .container_event{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: flex-start;
+      width: 50%;
+      height: 100%;
+      margin-top: 5rem;
+
   
 }
 // Ellipse avec photo*************************************
@@ -52,73 +86,36 @@
       box-shadow: 4px 0 20px grey;
       margin-left: 20px;
       z-index: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .img1{
-            background-position: center;
-            background-size: cover;
             width: 120px;
             height: 120px;
             border-radius: 50%;  
             box-shadow: 4px 0 20px grey;
-            transform: translate(12.5% ,12%);
             z-index: 3;
+            object-fit: cover;
 
       }
       .img2{
-            background-position: center;
-            background-size: cover;
             width: 120px;
             height: 120px;
             border-radius: 50%;  
             box-shadow: 4px 0 20px grey;
-            transform: translate(12.5% ,12%);
             z-index: 3;
+            object-fit: cover;
       }
       .img3{
-            background-position: center;
-            background-size: cover;
             width: 120px;
             height: 120px;
             border-radius: 50%;  
             box-shadow: 4px 0 20px grey;
-            transform: translate(12.5% ,12%);
+            object-fit: cover;
       }
 }
 // Text de l'évement******************************************
-.content_event{
-      background-color: v.$color-green;
-      opacity: 80%;
-      width: 60%;
-      height: 100%;
-      box-shadow: 4px 4px 20px grey;
-      padding: 1.5rem;
-      transform: translate(-20%,20%);
-      border-radius: 10px;
-      z-index: 2;
-      
-      h2{
-            font-family: Tangerine;
-            font-size: 48px;
-            margin-bottom: 1rem;
-            text-align: center;
-      }
-}
-.content_event:hover{
-      background-color: v.$color-green;
-      opacity: 80%;
-      width: 60%;
-      height: 100%;
-      box-shadow: 4px 4px 20px grey;
-      padding: 1rem;
-      transform: translate(-20%,20%);
-      border-radius: 10px;
-      z-index: 2;
-      h2{
-            font-family: Tangerine;
-            font-size: 48px;
-            background-color: v.$color-green;
-            text-align: end;
-      }
-}
+// 
 
 .title_event{
       background-color: white;
@@ -126,5 +123,37 @@
       font-family: Tangerine;
       font-size: 48px;
       padding: 0.2rem 1rem;
+      margin-top: 2rem;
+      margin-right: 2rem;
 }
+
+.title_event:hover{
+      visibility: hidden;
+}
+.text_event{
+      visibility: hidden;
+}
+.content_event:hover{
+      background-color: v.$color-green;
+      opacity: 80%;
+      width: 60%;
+      height: 100%;
+      box-shadow: 4px 4px 20px grey;
+      padding:0.5rem 1rem;
+      transform: translate(-20%,20%);
+      border-radius: 10px;
+      z-index: 2;
+      margin-bottom: 5rem;
+      h2{
+            font-family: Tangerine;
+            font-size: 48px;
+            background-color: v.$color-green;
+            text-align: end;
+      }
+      .text_event{
+            visibility: visible;
+      }
+}
+
+
 
