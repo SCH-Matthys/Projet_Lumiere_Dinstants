@@ -28,7 +28,7 @@ body {
 main {
   background: rgb(196, 231, 212);
   background: linear-gradient(20deg, rgb(196, 231, 212) 5%, rgb(250, 218, 221) 95%);
-  padding-top: 200px;
+  padding-top: 133px;
 }
 
 header {
@@ -279,30 +279,33 @@ footer > div:nth-of-type(3) ul li a:hover {
   color: #c4e7d4;
 }
 
-@media screen and (max-width: 1200px) {
-  .container_cards {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .container_event {
-    display: none;
-    margin: auto;
-  }
-  .title h2 {
-    background-color: aquamarine;
-  }
-  .greeting_container {
-    display: none;
-  }
-  .pict {
-    position: static;
-    background-size: auto;
-  }
-  .pict_1 {
-    margin: auto;
-    opacity: 1;
-  }
+.banner {
+  background-image: url(../img/bride-7689627_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9rem 0;
+  text-shadow: 1px 2px 5px #c4e7d4;
 }
+.banner p {
+  width: 40%;
+  padding-right: 2rem;
+  line-height: 2;
+}
+
+.slogan h1 {
+  font-family: tangerine;
+  font-size: 7em;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.banner_title_two {
+  padding-left: 6rem;
+}
+
 .container_services {
   font-family: poppins;
   font-size: 0.8em;
@@ -383,23 +386,22 @@ footer > div:nth-of-type(3) ul li a:hover {
   object-fit: cover;
 }
 
-.content_event {
-  background-color: #c4e7d4;
-  opacity: 80%;
-  width: 60%;
-  height: 100%;
-  box-shadow: 4px 4px 20px grey;
-  padding: 1.5rem;
-  transform: translate(-20%, 20%);
-  border-radius: 10px;
-  z-index: 2;
-  margin-bottom: 8rem;
-}
-.content_event h2 {
+.title_event {
+  background-color: white;
+  border-radius: 20px;
   font-family: Tangerine;
   font-size: 48px;
-  margin-bottom: 1rem;
-  text-align: center;
+  padding: 0.2rem 1rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.title_event:hover {
+  visibility: hidden;
+}
+
+.text_event {
+  visibility: hidden;
 }
 
 .content_event:hover {
@@ -408,10 +410,11 @@ footer > div:nth-of-type(3) ul li a:hover {
   width: 60%;
   height: 100%;
   box-shadow: 4px 4px 20px grey;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   transform: translate(-20%, 20%);
   border-radius: 10px;
   z-index: 2;
+  margin-bottom: 5rem;
 }
 .content_event:hover h2 {
   font-family: Tangerine;
@@ -419,13 +422,8 @@ footer > div:nth-of-type(3) ul li a:hover {
   background-color: #c4e7d4;
   text-align: end;
 }
-
-.title_event {
-  background-color: white;
-  border-radius: 20px;
-  font-family: Tangerine;
-  font-size: 48px;
-  padding: 0.2rem 1rem;
+.content_event:hover .text_event {
+  visibility: visible;
 }
 
 .section2 .title h2 {
@@ -524,6 +522,96 @@ footer > div:nth-of-type(3) ul li a:hover {
   display: flex;
   justify-content: space-around;
   margin-bottom: 2rem;
+}
+.gallery_control a {
+  color: #fadadd;
+}
+.gallery_control a:hover {
+  color: #2d2a32;
+}
+
+.btngallery {
+  background-color: #2d2a32;
+  border-radius: 30px;
+  padding: 0 5px 5px 0;
+  width: 300px;
+  text-align: center;
+  font-size: 1.4em;
+  padding-top: 10px;
+}
+
+.btngallery:hover {
+  background-color: #fadadd;
+  border-radius: 30px;
+  padding: 0 5px 5px 0;
+  width: 300px;
+  text-align: center;
+  font-size: 1.4em;
+  padding-top: 10px;
+  box-shadow: 0 5px 10px gray;
+  transition: all 0.3s linear;
+}
+
+.btngallery:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0;
+}
+
+@media screen and (max-width: 1460px) {
+  .slogan h1 {
+    font-size: 6em;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .slogan h1 {
+    font-size: 5em;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .slogan h1 {
+    font-size: 4em;
+  }
+  .banner_title_two {
+    padding-left: 2rem;
+  }
+  .container_cards {
+    flex-direction: column;
+  }
+  .container_event {
+    margin: auto;
+  }
+  .greeting_container {
+    flex-direction: column;
+  }
+  .greeting_container .pict {
+    position: static;
+    width: 430px;
+    height: 300px;
+    margin: auto;
+    box-shadow: 0 5px 33px 6px rgba(0, 0, 0, 0.35);
+    margin: 5px;
+    opacity: 1;
+  }
+  .section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .banner {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  .banner p {
+    width: 60%;
+    padding-right: 0;
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

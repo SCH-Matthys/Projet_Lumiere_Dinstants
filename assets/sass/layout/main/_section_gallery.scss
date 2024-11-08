@@ -42,8 +42,8 @@
       align-items: center;
       cursor: pointer;
       font-size: 60px;
-   
 }
+
 .fa-angles-right{
       color: white;
 }
@@ -95,6 +95,37 @@
       display: flex;
       justify-content: space-around;
       margin-bottom: 2rem;
+      a{
+            color: v.$color-pink;
+      }
+      a:hover{
+            color: v.$color-black
+      }
+}
+.btngallery{
+      background-color: v.$color-black;
+      border-radius: 30px;
+      padding: 0 5px 5px 0;
+      width: 300px;
+      text-align: center;
+      font-size: 1.4em;
+      padding-top: 10px;
+      
+}
+.btngallery:hover{
+      background-color: v.$color-pink;
+      border-radius: 30px;
+      padding: 0 5px 5px 0;
+      width: 300px;
+      text-align: center;
+      font-size: 1.4em;
+      padding-top: 10px;
+      box-shadow: 0 5px 10px gray;
+      transition: all 0.3s linear;
+}
+.btngallery:active{
+     transform: translate(5px,5px);
+     box-shadow: 0 0 0;
 }
 
 

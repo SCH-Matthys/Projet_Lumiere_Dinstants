@@ -1,7 +1,34 @@
 @use "../../abstract/variables" as v;
 @use "../../base/typography";
-@use "../../abstract/responsive";
+// bannier
+.banner{
+      background-image: url(../img/bride-7689627_1280.jpg);
+      background-size: cover;
+      background-position: center;
+      // height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // width: 100%;
+      padding: 9rem 0;
+      text-shadow: 1px 2px 5px v.$color-green;
 
+      p{
+            width: 40%;
+            padding-right: 2rem;
+            line-height: 2;
+      }
+}
+.slogan h1{
+      font-family: tangerine;
+      font-size: 7em;
+      width: 100%;
+      margin-left: 2rem;
+      
+}
+.banner_title_two{
+      padding-left: 6rem; 
+ }
 //  SECTION 1 - SERVICES
 .container_services{
       font-family: poppins;
@@ -88,42 +115,7 @@
       }
 }
 // Text de l'évement******************************************
-.content_event{
-      background-color: v.$color-green;
-      opacity: 80%;
-      width: 60%;
-      height: 100%;
-      box-shadow: 4px 4px 20px grey;
-      padding: 1.5rem;
-      transform: translate(-20%,20%);
-      border-radius: 10px;
-      z-index: 2;
-      margin-bottom: 8rem;
-      
-      h2{
-            font-family: Tangerine;
-            font-size: 48px;
-            margin-bottom: 1rem;
-            text-align: center;
-      }
-}
-.content_event:hover{
-      background-color: v.$color-green;
-      opacity: 80%;
-      width: 60%;
-      height: 100%;
-      box-shadow: 4px 4px 20px grey;
-      padding: 1rem;
-      transform: translate(-20%,20%);
-      border-radius: 10px;
-      z-index: 2;
-      h2{
-            font-family: Tangerine;
-            font-size: 48px;
-            background-color: v.$color-green;
-            text-align: end;
-      }
-}
+// 
 
 .title_event{
       background-color: white;
@@ -131,5 +123,37 @@
       font-family: Tangerine;
       font-size: 48px;
       padding: 0.2rem 1rem;
+      margin-top: 2rem;
+      margin-right: 2rem;
 }
+
+.title_event:hover{
+      visibility: hidden;
+}
+.text_event{
+      visibility: hidden;
+}
+.content_event:hover{
+      background-color: v.$color-green;
+      opacity: 80%;
+      width: 60%;
+      height: 100%;
+      box-shadow: 4px 4px 20px grey;
+      padding:0.5rem 1rem;
+      transform: translate(-20%,20%);
+      border-radius: 10px;
+      z-index: 2;
+      margin-bottom: 5rem;
+      h2{
+            font-family: Tangerine;
+            font-size: 48px;
+            background-color: v.$color-green;
+            text-align: end;
+      }
+      .text_event{
+            visibility: visible;
+      }
+}
+
+
 
