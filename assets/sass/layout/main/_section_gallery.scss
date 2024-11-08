@@ -37,6 +37,10 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      height: 400px;
+      margin: 0 auto;
+      max-width: 1000px;
+      position: relative;
 }
 .btn{
       display: flex;
@@ -54,14 +58,6 @@
 }
 .greeting_gallery{
       width: 100%;
-}
-.greeting_container{
-      align-items: center;
-      display: flex;
-      height: 400px;
-      margin: 0 auto;
-      max-width: 1000px;
-      position: relative;
 }
 .pict{
       height: 200px;
