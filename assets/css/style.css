@@ -264,66 +264,6 @@ footer > div:nth-of-type(3) ul li a:hover {
   color: #c4e7d4;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 900px) {
-  header nav {
-    flex-direction: row-reverse;
-  }
-  header nav ul {
-    display: none;
-    margin-top: 16px;
-  }
-  header nav ul li {
-    padding: 4px 16px;
-    width: 100%;
-    display: block;
-    border-bottom: solid 2px #fadadd;
-  }
-  header nav #menuBurger {
-    margin-left: 16px;
-    display: flex;
-  }
-  footer {
-    padding: 50px 50px;
-  }
-  footer > div:nth-of-type(2) img {
-    height: 100px;
-  }
-}
-@media screen and (max-width: 800px) {
-  #test-carrousel > div:nth-of-type(2) > article {
-    margin: 100px 0px 64px;
-  }
-  #test-carrousel > div:nth-of-type(2) > article > div p {
-    text-align: center;
-    padding: 0px 32px 16px;
-  }
-  footer {
-    flex-direction: column;
-    justify-content: center;
-  }
-  footer > div:nth-of-type(1) {
-    justify-content: center;
-    align-items: center;
-    order: 2;
-    height: auto;
-    padding-bottom: 48px;
-  }
-  footer > div:nth-of-type(1) p {
-    text-align: center;
-  }
-  footer > div:nth-of-type(2) {
-    order: 1;
-    padding-bottom: 48px;
-  }
-  footer > div:nth-of-type(3) {
-    justify-content: center;
-    align-items: center;
-    order: 3;
-    height: auto;
-  }
-}
-=======
 .banner {
   background-image: url(../img/bride-7689627_1280.jpg);
   background-size: cover;
@@ -351,7 +291,6 @@ footer > div:nth-of-type(3) ul li a:hover {
   padding-left: 6rem;
 }
 
->>>>>>> accueil_gip
 .container_services {
   font-family: poppins;
   font-size: 0.8em;
@@ -430,6 +369,10 @@ footer > div:nth-of-type(3) ul li a:hover {
   border-radius: 50%;
   box-shadow: 4px 0 20px grey;
   object-fit: cover;
+}
+
+.content_event {
+  width: 50%;
 }
 
 .title_event {
@@ -603,6 +546,64 @@ footer > div:nth-of-type(3) ul li a:hover {
   box-shadow: 0 0 0;
 }
 
+@media screen and (max-width: 900px) {
+  header nav {
+    flex-direction: row-reverse;
+  }
+  header nav ul {
+    display: none;
+    margin-top: 16px;
+  }
+  header nav ul li {
+    padding: 4px 16px;
+    width: 100%;
+    display: block;
+    border-bottom: solid 2px #fadadd;
+  }
+  header nav #menuBurger {
+    margin-left: 16px;
+    display: flex;
+  }
+  footer {
+    padding: 50px 50px;
+  }
+  footer > div:nth-of-type(2) img {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #test-carrousel > div:nth-of-type(2) > article {
+    margin: 100px 0px 64px;
+  }
+  #test-carrousel > div:nth-of-type(2) > article > div p {
+    text-align: center;
+    padding: 0px 32px 16px;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer > div:nth-of-type(1) {
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    height: auto;
+    padding-bottom: 48px;
+  }
+  footer > div:nth-of-type(1) p {
+    text-align: center;
+  }
+  footer > div:nth-of-type(2) {
+    order: 1;
+    padding-bottom: 48px;
+  }
+  footer > div:nth-of-type(3) {
+    justify-content: center;
+    align-items: center;
+    order: 3;
+    height: auto;
+  }
+}
 @media screen and (max-width: 1460px) {
   .slogan h1 {
     font-size: 6em;
