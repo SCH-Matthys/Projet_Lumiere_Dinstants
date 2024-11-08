@@ -6,9 +6,9 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 100px;
+    padding: 40px 100px 60px;
     >div{
-        height: 200px;
+        height: 100px;
     }
     >div:nth-of-type(1){
         p:nth-of-type(1){
@@ -19,6 +19,11 @@ footer{
         }
         p{
             padding-bottom: 8px;
+        }
+    }
+    >div:nth-of-type(2){
+        img{
+            height: 100px;
         }
     }
     >div:nth-of-type(3){

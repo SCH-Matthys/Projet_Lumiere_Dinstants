@@ -6,6 +6,32 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    .title {
+        h2{
+              background-color: var.$color-green;
+              border-radius:10px 10px 0 0;
+              padding-top: 0.2rem;
+              padding-bottom: 0.2rem;
+              width: 200px;
+              font-family: Tangerine;
+              font-size: 48px;
+              box-shadow: 4px 0px 20px grey;
+              margin-left: 22em;
+              text-align: end;
+              padding-right: 1rem;
+             
+        }
+        .ligne{
+              border-top: 2rem;
+              background-color: var.$color-green;
+              height: 5px;
+              width: 55rem;
+              box-shadow: 4px 0 10px grey;
+              margin: auto;
+              margin-bottom: 2rem;
+        }
+    }
+
     h2{
         font-family: Tangerine;
         font-size: 72px;
@@ -13,7 +39,7 @@
         text-align: center;
         padding-bottom: 64px;
     }
-    >div:nth-of-type(1){
+    >div:nth-of-type(2){
         display: flex;
         width: 400%;
         position: relative;
@@ -61,7 +87,7 @@
             }
         }
     }
-    >div:nth-of-type(2){
+    >div:nth-of-type(3){
         display: flex;
         justify-content: center;
         gap: 25px;

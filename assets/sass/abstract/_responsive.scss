@@ -1,3 +1,69 @@
-@media screen and (max-width:(1800px)){
-    
+@use "./../abstract/variables" as var;
+
+@media screen and (max-width:(900px)){
+    header{
+        nav{
+            flex-direction: row-reverse;
+            ul{
+                display: none;
+                margin-top: 16px;
+                li{
+                    padding: 4px 16px;
+                    width: 100%;
+                    display: block;
+                    border-bottom: solid 2px var.$color-pink;
+                }
+            }
+            #menuBurger{
+                margin-left: 16px;
+                display: flex;
+            }
+        }
+    }
+    footer{
+        padding: 50px 50px;
+        >div:nth-of-type(2){
+           img{
+            height: 100px;
+           }
+        }
+    }
+}
+
+@media screen and (max-width:(800px)){
+    #test-carrousel{
+        >div:nth-of-type(2)>article{
+            margin: 100px 0px 64px;
+            >div{
+                p{
+                    text-align: center;
+                    padding: 0px 32px 16px;
+                }
+            }
+        }
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        >div:nth-of-type(1){
+            justify-content: center;
+            align-items: center;
+            order: 2;
+            height: auto;
+            padding-bottom: 48px;
+            p{
+                text-align: center;
+            }
+        }
+        >div:nth-of-type(2){
+            order: 1;
+            padding-bottom: 48px;
+        }
+        >div:nth-of-type(3){
+            justify-content: center;
+            align-items: center;
+            order: 3;
+            height: auto;
+        }
+    }
 }
