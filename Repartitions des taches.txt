@@ -1,0 +1,23 @@
+Projet : Lumière d'instants 
+Membres : Algan ; Lukas ; Gipsy ; Matthys
+
+3 Pages : Index ; Gallery; Contact
+
+Repartition : 
+
+Page Index : Gipsy ; Matthys
+
+Maquette Desktop: https://www.figma.com/design/1T3AeVIBv7icKomoENgTRk/Lumi%C3%A8re-d'Instants?node-id=0-1&node-type=canvas&t=9rMJ2lgcNpe6VqZ8-0
+Maquette Tablette, Mobile: https://www.figma.com/design/gr4Dvesm3VBqA1xyAdztow/Lumi%C3%A8re-d'instants?node-id=0-1&t=NV4hdAgpEonBYIdJ-1
+
+Sur la page : 
+header/temoignages/footer + responsive : Matthys
+services / gallerie + responsive : Gipsy
+
+Page Gallery : Algan
+Maquette: https://www.figma.com/design/Q7RNxFwD1FbjoYItQxmavn/Untitled?node-id=0-1&node-type=canvas&t=tO83rXIOosXDG8gz-0
+Toute la page : Algan
+
+Page Contact : Lukas
+Maquette : 
+Toute la page : Lukas
