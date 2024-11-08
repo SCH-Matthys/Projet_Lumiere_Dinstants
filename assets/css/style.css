@@ -41,7 +41,6 @@ header nav {
   display: flex;
   justify-content: space-between;
   padding: 16px 16px;
-  height: 280px;
 }
 header nav img {
   height: 100px;
@@ -72,20 +71,72 @@ header nav #menuBurger {
   display: none;
   flex-direction: column;
   justify-content: space-evenly;
+  position: relative;
 }
 header nav #menuBurger div {
+  position: absolute;
   margin-left: 50%;
   transform: translateX(-50%);
   width: 65%;
   height: 4px;
   border-radius: 4px;
   background-color: #fadadd;
+  transition: 0.2s;
+}
+
+.open > div:nth-of-type(1) {
+  top: 20px;
+  left: 0px;
+}
+.open > div:nth-of-type(2) {
+  top: 43px;
+  left: 0px;
+}
+.open > div:nth-of-type(3) {
+  bottom: 20px;
+  left: 0px;
+}
+
+.hidden > div:nth-of-type(1) {
+  rotate: 45deg;
+  top: 60px;
+  left: -7px;
+}
+.hidden > div:nth-of-type(2) {
+  display: none;
+}
+.hidden > div:nth-of-type(3) {
+  rotate: -45deg;
+  bottom: 60px;
+  left: -7px;
 }
 
 #test-carrousel {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+#test-carrousel .title h2 {
+  background-color: #c4e7d4;
+  border-radius: 10px 10px 0 0;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  width: 200px;
+  font-family: Tangerine;
+  font-size: 48px;
+  box-shadow: 4px 0px 20px grey;
+  margin-left: 22em;
+  text-align: end;
+  padding-right: 1rem;
+}
+#test-carrousel .title .ligne {
+  border-top: 2rem;
+  background-color: #c4e7d4;
+  height: 5px;
+  width: 55rem;
+  box-shadow: 4px 0 10px grey;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 #test-carrousel h2 {
   font-family: Tangerine;
@@ -94,14 +145,14 @@ header nav #menuBurger div {
   text-align: center;
   padding-bottom: 64px;
 }
-#test-carrousel > div:nth-of-type(1) {
+#test-carrousel > div:nth-of-type(2) {
   display: flex;
   width: 400%;
   position: relative;
   transition: 1s;
   left: 0%;
 }
-#test-carrousel > div:nth-of-type(1) article {
+#test-carrousel > div:nth-of-type(2) article {
   background-color: #fadadd;
   position: relative;
   border-radius: 2px;
@@ -109,7 +160,7 @@ header nav #menuBurger div {
   width: 80%;
   margin: 100px 32px 64px;
 }
-#test-carrousel > div:nth-of-type(1) article img {
+#test-carrousel > div:nth-of-type(2) article img {
   width: 150px;
   border-radius: 75px;
   border: solid 4px #fadadd;
@@ -118,44 +169,44 @@ header nav #menuBurger div {
   left: 50%;
   transform: translateX(-50%);
 }
-#test-carrousel > div:nth-of-type(1) article > div {
+#test-carrousel > div:nth-of-type(2) article > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 75px;
 }
-#test-carrousel > div:nth-of-type(1) article > div h3 {
+#test-carrousel > div:nth-of-type(2) article > div h3 {
   padding: 16px;
   font-family: Tangerine;
   font-size: 48px;
   color: #2d2a32;
 }
-#test-carrousel > div:nth-of-type(1) article > div p {
+#test-carrousel > div:nth-of-type(2) article > div p {
   text-align: center;
   padding: 0px 100px 16px;
 }
-#test-carrousel > div:nth-of-type(1) article > div ul {
+#test-carrousel > div:nth-of-type(2) article > div ul {
   display: flex;
 }
-#test-carrousel > div:nth-of-type(1) article > div ul li {
+#test-carrousel > div:nth-of-type(2) article > div ul li {
   padding: 0px 4px 24px;
   color: #eda323;
 }
-#test-carrousel > div:nth-of-type(2) {
+#test-carrousel > div:nth-of-type(3) {
   display: flex;
   justify-content: center;
   gap: 25px;
   margin-bottom: 75px;
 }
-#test-carrousel > div:nth-of-type(2) > div {
+#test-carrousel > div:nth-of-type(3) > div {
   width: 25px;
   height: 25px;
   border-radius: 25px;
   background-color: #fadadd;
   cursor: pointer;
 }
-#test-carrousel > div:nth-of-type(2) > div:hover {
+#test-carrousel > div:nth-of-type(3) > div:hover {
   background-color: black;
 }
 
@@ -165,10 +216,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px;
+  padding: 40px 100px 60px;
 }
 footer > div {
-  height: 200px;
+  height: 100px;
 }
 footer > div:nth-of-type(1) p:nth-of-type(1) {
   font-size: 18px;
@@ -178,6 +229,9 @@ footer > div:nth-of-type(1) p:nth-of-type(1) {
 }
 footer > div:nth-of-type(1) p {
   padding-bottom: 8px;
+}
+footer > div:nth-of-type(2) img {
+  height: 100px;
 }
 footer > div:nth-of-type(3) {
   display: flex;
@@ -236,10 +290,10 @@ footer > div:nth-of-type(3) ul li a:hover {
   }
 }
 @media screen and (max-width: 800px) {
-  #test-carrousel > div:nth-of-type(1) > article {
+  #test-carrousel > div:nth-of-type(2) > article {
     margin: 100px 0px 64px;
   }
-  #test-carrousel > div:nth-of-type(1) > article > div p {
+  #test-carrousel > div:nth-of-type(2) > article > div p {
     text-align: center;
     padding: 0px 32px 16px;
   }
@@ -260,9 +314,6 @@ footer > div:nth-of-type(3) ul li a:hover {
   footer > div:nth-of-type(2) {
     order: 1;
     padding-bottom: 48px;
-  }
-  footer > div:nth-of-type(2) img {
-    height: 200px;
   }
   footer > div:nth-of-type(3) {
     justify-content: center;
